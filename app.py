@@ -1,4 +1,5 @@
 import argparse
+import numpy
 
 def greet(name, times):
     for i in range(times):
@@ -10,4 +11,4 @@ if __name__ == "__main__":
     parser.add_argument("--times", type=int, default=1)
     
     args = parser.parse_args()
-    greet(args.name, args.times)
+    greet(args.name, args.times) 
